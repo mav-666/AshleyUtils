@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mav6.ashleyUtils",
+    "module": "AshleyUtils",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "AshleyUtils-1.1.jar",
+          "url": "AshleyUtils-1.1.jar",
+          "size": 41807,
+          "sha512": "8ba1264ff04c2619d9fda2ce6a0b5fefd54efab1f09b593c30ea4d13bffbd7601a368ef0ca32672cc88d60988c7963ebea96155bc0b08a67b36568e404f71371",
+          "sha256": "0a810e14f0630fa1221645d4ab9b2408e7e69f31c735225ea81ff61ed1c2a949",
+          "sha1": "a7b2ebffb78bea071bfbcdaca2618215b6e0daf4",
+          "md5": "ac82e11a8a39ba51b284aa68ad28bbfc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "com.badlogicgames.ashley",
+          "module": "ashley",
+          "version": {
+            "requires": "1.7.4"
+          }
+        },
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx-box2d",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.13.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "AshleyUtils-1.1.jar",
+          "url": "AshleyUtils-1.1.jar",
+          "size": 41807,
+          "sha512": "8ba1264ff04c2619d9fda2ce6a0b5fefd54efab1f09b593c30ea4d13bffbd7601a368ef0ca32672cc88d60988c7963ebea96155bc0b08a67b36568e404f71371",
+          "sha256": "0a810e14f0630fa1221645d4ab9b2408e7e69f31c735225ea81ff61ed1c2a949",
+          "sha1": "a7b2ebffb78bea071bfbcdaca2618215b6e0daf4",
+          "md5": "ac82e11a8a39ba51b284aa68ad28bbfc"
+        }
+      ]
+    }
+  ]
+}
