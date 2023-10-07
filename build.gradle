@@ -16,6 +16,18 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.mav6.ashleyUtils'
+            artifactId = 'AshleyUtils'
+            version = '1.1'
+
+            from components.java
+        }
+    }
+}
+
 task dist(type: Jar) {
     duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
     dependsOn configurations.runtimeClasspath
