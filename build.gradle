@@ -3,6 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
+sourceCompatibility = 1.16
 group =  'com.mav6.ashleyUtils'
 version = '1.1'
 
