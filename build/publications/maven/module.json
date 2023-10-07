@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mav6.ashleyUtils",
+    "module": "library",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "library-1.1.jar",
+          "url": "library-1.1.jar",
+          "size": 41807,
+          "sha512": "cf326ba8d6a2f11a794f78d4e1e4e59da402264a5e1195a7fd6e853a371ddef11e965c722bc9e2a0e63e7ff949115c063197593cb14e4642917d8aa21782263c",
+          "sha256": "ffc8b6da61767edeca3dddbd9bbd64cf05c5cc5e7727b2e776c8e4baf2fa870d",
+          "sha1": "03e52f3d687b8a01ca808ef1f5fa7dc583b69f21",
+          "md5": "b07bf7d0afe8b2fd504584a55037979b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "com.badlogicgames.ashley",
+          "module": "ashley",
+          "version": {
+            "requires": "1.7.4"
+          }
+        },
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx-box2d",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.13.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library-1.1.jar",
+          "url": "library-1.1.jar",
+          "size": 41807,
+          "sha512": "cf326ba8d6a2f11a794f78d4e1e4e59da402264a5e1195a7fd6e853a371ddef11e965c722bc9e2a0e63e7ff949115c063197593cb14e4642917d8aa21782263c",
+          "sha256": "ffc8b6da61767edeca3dddbd9bbd64cf05c5cc5e7727b2e776c8e4baf2fa870d",
+          "sha1": "03e52f3d687b8a01ca808ef1f5fa7dc583b69f21",
+          "md5": "b07bf7d0afe8b2fd504584a55037979b"
+        }
+      ]
+    }
+  ]
+}
