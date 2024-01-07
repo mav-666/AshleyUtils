@@ -4,7 +4,7 @@ import com.badlogic.ashley.core.Entity;
 
 public interface Arranger {
 
-    void arrangeBy(Entity prototype);
+    void arrangeBy(Entity prototype, Entity arranged);
 
     String getAspect();
 }
