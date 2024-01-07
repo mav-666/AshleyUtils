@@ -4,13 +4,7 @@ import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.Shape;
 import com.badlogic.gdx.utils.FloatArray;
 
-/**
- * The type Polygon factory.
- */
 public class PolygonFactory implements ShapeFactory {
-    /**
-     * The Polygon.
-     */
     PolygonShape polygon;
 
     @Override

@@ -1,9 +1,9 @@
 -classpath 'D:\\all_projects\\book\\java\\AshleyUtils\\build\\classes\\java\\main;D:\\all_projects\\book\\java\\AshleyUtils\\build\\resources\\main;C:\\Users\\stalashka\\.gradle\\caches\\modules-2\\files-2.1\\com.badlogicgames.ashley\\ashley\\1.7.4\\21a3a8932919099c4e5006a7d8378dcbe76ef8a5\\ashley-1.7.4.jar;C:\\Users\\stalashka\\.gradle\\caches\\modules-2\\files-2.1\\com.badlogicgames.gdx\\gdx-box2d\\1.12.1\\6c37ed04f97d062f1bdc4afe1f583182e539a269\\gdx-box2d-1.12.1.jar;C:\\Users\\stalashka\\.gradle\\caches\\modules-2\\files-2.1\\com.badlogicgames.gdx\\gdx\\1.12.1\\a2d066c09329c457045c284c42d6f37122840aa\\gdx-1.12.1.jar;C:\\Users\\stalashka\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-lang3\\3.13.0\\b7263237aa89c1f99b327197c41d0669707a462e\\commons-lang3-3.13.0.jar;C:\\Users\\stalashka\\.gradle\\caches\\modules-2\\files-2.1\\com.badlogicgames.gdx\\gdx-jnigen-loader\\2.3.1\\2d472f69243631fbcb3d4c3f93dd2e137a6cb084\\gdx-jnigen-loader-2.3.1.jar'
 -d 'D:\\all_projects\\book\\java\\AshleyUtils\\build\\docs\\javadoc'
--doctitle 'AshleyUtils 1.4.2 API'
+-doctitle 'AshleyUtils 1.4.3 API'
 -notimestamp 
 -quiet 
--windowtitle 'AshleyUtils 1.4.2 API'
+-windowtitle 'AshleyUtils 1.4.3 API'
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\ComponentInitializer.java'
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\EntityTemplateFactory.java'
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\EntityTemplateFactoryBy.java'
@@ -43,5 +43,5 @@
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\Placers\\Placement.java'
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\Placers\\Placer.java'
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\Summon\\Arranger.java'
-'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\Summon\\DynamicEntityArranger.java'
+'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\buildingUtils\\Summon\\EntityArranger.java'
 'D:\\all_projects\\book\\java\\AshleyUtils\\src\\main\\java\\com.mav6.ashleyUtils\\componentUtils\\Mappers.java'

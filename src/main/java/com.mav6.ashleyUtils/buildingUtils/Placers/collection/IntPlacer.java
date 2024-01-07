@@ -6,19 +6,10 @@ import com.mav6.ashleyUtils.buildingUtils.Placers.LimitedPlacer;
 import com.mav6.ashleyUtils.buildingUtils.Placers.Placer;
 
 
-/**
- * The type Int placer.
- */
 public class IntPlacer extends LimitedPlacer {
 
     private final Placer placer;
 
-    /**
-     * Instantiates a new Int placer.
-     *
-     * @param bounds the bounds
-     * @param placer the placer
-     */
     public IntPlacer(Bounds bounds, Placer placer) {
         super(bounds);
 

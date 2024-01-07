@@ -4,9 +4,6 @@ import com.badlogic.gdx.physics.box2d.ChainShape;
 import com.badlogic.gdx.physics.box2d.Shape;
 import com.badlogic.gdx.utils.FloatArray;
 
-/**
- * The type Chain factory.
- */
 public class ChainFactory implements ShapeFactory {
 
     @Override

@@ -2,9 +2,6 @@ package com.mav6.ashleyUtils.buildingUtils.FieldInitializers;
 
 import com.badlogic.gdx.math.Vector2;
 
-/**
- * The type Vector 2 initializer.
- */
 public class Vector2Initializer extends ArrayFieldInitializer<Vector2, Float> {
 
     @Override

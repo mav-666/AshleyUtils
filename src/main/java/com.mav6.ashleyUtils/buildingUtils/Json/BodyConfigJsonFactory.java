@@ -11,18 +11,10 @@ import com.mav6.ashleyUtils.buildingUtils.FieldInitializers.Box2dBodyCreation.Sh
 import com.mav6.ashleyUtils.buildingUtils.FieldInitializers.Box2dBodyCreation.ShapeFactoryProvider;
 
 
-/**
- * The type Body config json factory.
- */
 public class BodyConfigJsonFactory extends JsonConfigFactory<BodyConfig> {
 
     private final ShapeFactoryProvider shapeFactoryProvider;
 
-    /**
-     * Instantiates a new Body config json factory.
-     *
-     * @param jsonLoader the json loader
-     */
     public BodyConfigJsonFactory(JsonLoader jsonLoader) {
         super(jsonLoader);
 
