@@ -21,7 +21,7 @@ public class EntityArranger {
         arrangers.put(arranger.getAspect(), arranger);
     }
 
-    Arranger getArrangerOf(String aspect) {
+    public Arranger getArrangerOf(String aspect) {
         return arrangers.get(aspect);
     }
 

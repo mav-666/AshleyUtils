@@ -9,7 +9,7 @@ java {
 }
 
 group =  'com.mav6.ashleyUtils'
-version = '1.4.3'
+version = '1.4.4'
 
 repositories {
     mavenCentral()
@@ -21,7 +21,7 @@ publishing {
         mavenJava(MavenPublication) {
             groupId = 'com.mav6.ashleyUtils'
             artifactId = 'AshleyUtils'
-            version = '1.4.3'
+            version = '1.4.4'
 
             from components.java
         }
@@ -35,12 +35,6 @@ task dist(type: Jar) {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
     with jar
-}
-
-task makeJavadoc (type :Jar, dependsOn: javadoc){
-    from docsDir
-    classifier='docs'
-    description='Creates a Javadoc Jar'
 }
 
 dependencies {
