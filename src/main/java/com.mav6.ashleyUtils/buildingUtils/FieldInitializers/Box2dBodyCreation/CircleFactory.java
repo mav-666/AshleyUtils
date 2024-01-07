@@ -5,6 +5,9 @@ import com.badlogic.gdx.physics.box2d.CircleShape;
 import com.badlogic.gdx.physics.box2d.Shape;
 import com.badlogic.gdx.utils.FloatArray;
 
+/**
+ * The type Circle factory.
+ */
 public class CircleFactory implements ShapeFactory {
 
     @Override

@@ -7,12 +7,24 @@ import com.mav6.ashleyUtils.buildingUtils.Placers.Bounds;
 
 import java.util.Random;
 
+/**
+ * The type Repeat random placer.
+ */
 public class RepeatRandomPlacer extends RandomPlacer {
 
+    /**
+     * The Past spots.
+     */
     Array<Vector2> pastSpots = new Array<>();
     private int currentSpot = 0;
     private boolean isRepeating = true;
 
+    /**
+     * Instantiates a new Repeat random placer.
+     *
+     * @param bounds the bounds
+     * @param random the random
+     */
     public RepeatRandomPlacer(Bounds bounds, Random random) {
         super(bounds, random);
     }

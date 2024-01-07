@@ -5,6 +5,9 @@ import com.badlogic.gdx.utils.ObjectMap;
 
 import java.util.Optional;
 
+/**
+ * The type Cached loader.
+ */
 public abstract class CachedLoader implements JsonLoader {
 
     private final ObjectMap<String, JsonValue> loadedJsons = new ObjectMap<>();
@@ -14,6 +17,12 @@ public abstract class CachedLoader implements JsonLoader {
         loadedJsons.put(name, loadFromSource(name));
     }
 
+    /**
+     * Load from source json value.
+     *
+     * @param name the name
+     * @return the json value
+     */
     protected abstract JsonValue loadFromSource(String name);
 
     @Override

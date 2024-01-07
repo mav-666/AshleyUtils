@@ -14,12 +14,23 @@ import com.mav6.ashleyUtils.buildingUtils.FieldInitializers.FieldInitializer;
 
 import java.lang.reflect.Field;
 
+/**
+ * The type Entity template factory by json.
+ */
 public class EntityTemplateFactoryByJson extends EntityTemplateFactoryBy<JsonValue> {
     private final Json json;
     private final JsonLoader jsonLoader;
 
     private final ComponentInitializer componentInitializer;
 
+    /**
+     * Instantiates a new Entity template factory by json.
+     *
+     * @param engine               the engine
+     * @param componentPath        the component path
+     * @param componentInitializer the component initializer
+     * @param jsonLoader           the json loader
+     */
     public EntityTemplateFactoryByJson(Engine engine, String componentPath, ComponentInitializer componentInitializer, JsonLoader jsonLoader) {
         super(engine, componentPath);
 

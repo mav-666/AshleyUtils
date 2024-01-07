@@ -5,10 +5,18 @@ import com.mav6.ashleyUtils.buildingUtils.Placers.Placer;
 import com.mav6.ashleyUtils.buildingUtils.Placers.Bounds;
 
 
+/**
+ * The type Square placer.
+ */
 public class SquarePlacer extends Placer {
 
     private final Vector2 currentSpot = new Vector2(bounds.startX(),bounds.startY());
-    
+
+    /**
+     * Instantiates a new Square placer.
+     *
+     * @param bounds the bounds
+     */
     public SquarePlacer(Bounds bounds) {
         super(bounds);
     }

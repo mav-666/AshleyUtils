@@ -5,6 +5,9 @@ import com.mav6.ashleyUtils.buildingUtils.Placers.Placer;
 import com.mav6.ashleyUtils.buildingUtils.Placers.Bounds;
 
 
+/**
+ * The type Border placer.
+ */
 public class BorderPlacer extends Placer {
 
     private final Vector2 currentSpot = new Vector2(bounds.startX(), bounds.startY());
@@ -13,6 +16,11 @@ public class BorderPlacer extends Placer {
 
     private boolean finished = false;
 
+    /**
+     * Instantiates a new Border placer.
+     *
+     * @param bounds the bounds
+     */
     public BorderPlacer(Bounds bounds) {
         super(bounds);
     }

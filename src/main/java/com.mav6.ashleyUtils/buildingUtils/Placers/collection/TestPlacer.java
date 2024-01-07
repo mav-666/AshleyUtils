@@ -5,10 +5,18 @@ import com.mav6.ashleyUtils.buildingUtils.Placers.Bounds;
 import com.mav6.ashleyUtils.buildingUtils.Placers.Placer;
 
 
+/**
+ * The type Test placer.
+ */
 public class TestPlacer extends Placer {
 
     private boolean tested = false;
 
+    /**
+     * Instantiates a new Test placer.
+     *
+     * @param bounds the bounds
+     */
     public TestPlacer(Bounds bounds) {
         super(bounds);
     }
