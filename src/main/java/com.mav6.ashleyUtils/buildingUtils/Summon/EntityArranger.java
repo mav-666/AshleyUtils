@@ -25,7 +25,9 @@ public class EntityArranger {
         return arrangers.get(aspect);
     }
 
-    private class ChainArranger {
+    public class ChainArranger {
+
+        private ChainArranger() {}
         public ChainArranger arrange(String aspect) {
             arrangers.get(aspect).arrangeBy(prototype, arranged);
 
