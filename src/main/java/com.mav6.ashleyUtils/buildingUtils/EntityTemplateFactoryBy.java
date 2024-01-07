@@ -24,7 +24,7 @@ public abstract class EntityTemplateFactoryBy<T> implements EntityTemplateFactor
     }
 
     protected Component parseComponent(String componentName) {
-        return Mappers.get(createComponentClass(componentName), entityTemplate);
+        return Mappers.getOrCreate(createComponentClass(componentName), entityTemplate);
     }
 
     protected Class<? extends Component> createComponentClass(String componentName) {
