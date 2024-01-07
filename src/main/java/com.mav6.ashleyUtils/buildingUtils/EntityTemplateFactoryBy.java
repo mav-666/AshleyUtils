@@ -17,7 +17,7 @@ public abstract class EntityTemplateFactoryBy<T> implements EntityTemplateFactor
 
     }
 
-    public Entity createTemplate(String entityName) {
+    public Entity createTemplateBy(String entityName) {
         return entityTemplate = engine.createEntity();
     }
 

@@ -30,8 +30,8 @@ public class EntityTemplateFactoryByJson extends EntityTemplateFactoryBy<JsonVal
     }
 
     @Override
-    public Entity createTemplate(String entityName) {
-        super.createTemplate(entityName);
+    public Entity createTemplateBy(String entityName) {
+        super.createTemplateBy(entityName);
 
         var json = jsonLoader.findJson(entityName);
 
