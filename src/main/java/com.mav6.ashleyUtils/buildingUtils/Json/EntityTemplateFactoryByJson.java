@@ -2,24 +2,25 @@ package com.mav6.ashleyUtils.buildingUtils.Json;
 
 import com.badlogic.ashley.core.Component;
 import com.badlogic.ashley.core.Engine;
+import com.badlogic.ashley.core.Entity;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
 import com.badlogic.gdx.utils.JsonWriter;
-import com.mav6.ashleyUtils.buildingUtils.EntityBuilder;
+import com.mav6.ashleyUtils.buildingUtils.EntityTemplateFactoryBy;
 import com.mav6.ashleyUtils.buildingUtils.ComponentInitializer;
 import com.mav6.ashleyUtils.buildingUtils.FieldInitializers.ArrayFieldInitializer;
 import com.mav6.ashleyUtils.buildingUtils.FieldInitializers.FieldInitializer;
 
 import java.lang.reflect.Field;
 
-public class JsonEntityBuilder extends EntityBuilder<JsonValue> {
+public class EntityTemplateFactoryByJson extends EntityTemplateFactoryBy<JsonValue> {
     private final Json json;
     private final JsonLoader jsonLoader;
 
     private final ComponentInitializer componentInitializer;
 
-    public JsonEntityBuilder(Engine engine, String componentPath, ComponentInitializer componentInitializer, JsonLoader jsonLoader) {
+    public EntityTemplateFactoryByJson(Engine engine, String componentPath, ComponentInitializer componentInitializer, JsonLoader jsonLoader) {
         super(engine, componentPath);
 
         this.json = new Json();
@@ -29,12 +30,14 @@ public class JsonEntityBuilder extends EntityBuilder<JsonValue> {
     }
 
     @Override
-    public void build(String entityName) {
-        super.build(entityName);
+    public Entity createTemplate(String entityName) {
+        super.createTemplate(entityName);
 
         var json = jsonLoader.findJson(entityName);
 
         json.ifPresent(this::createByJson);
+
+        return entityTemplate;
     }
 
     private void createByJson(JsonValue entityJson) {

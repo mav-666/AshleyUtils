@@ -6,23 +6,23 @@ import com.badlogic.ashley.core.Entity;
 import com.badlogic.gdx.Gdx;
 import com.mav6.ashleyUtils.componentUtils.Mappers;
 
-public abstract class EntityBuilder<T> {
+public abstract class EntityTemplateFactoryBy<T> implements EntityTemplateFactory {
     private final String componentPath;
     private final Engine engine;
 
-    protected Entity entity;
-    public EntityBuilder(Engine engine, String componentPath) {
+    protected Entity entityTemplate;
+    public EntityTemplateFactoryBy(Engine engine, String componentPath) {
         this.engine = engine;
         this.componentPath = componentPath;
 
     }
 
-    public void build(String entityName) {
-        entity = engine.createEntity();
+    public Entity createTemplate(String entityName) {
+        return entityTemplate = engine.createEntity();
     }
 
     protected Component parseComponent(String componentName) {
-        return getComponent(createComponentClass(componentName));
+        return Mappers.get(createComponentClass(componentName), entityTemplate);
     }
 
     protected Class<? extends Component> createComponentClass(String componentName) {
@@ -39,16 +39,4 @@ public abstract class EntityBuilder<T> {
     }
 
     protected abstract void initComponent(Component component, T componentInit);
-
-    public <C extends Component> C getComponent(Class<C> componentType) {
-        return Mappers.getOrCreate(componentType, entity);
-    }
-
-    public <C extends Component> boolean hasComponent(Class<C> componentType) {
-        return Mappers.has(componentType, entity);
-    }
-
-    public Entity getEntity() {
-        return entity;
-    }
 }
