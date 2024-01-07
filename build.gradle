@@ -9,7 +9,7 @@ java {
 }
 
 group =  'com.mav6.ashleyUtils'
-version = '1.4.1'
+version = '1.4.2'
 
 repositories {
     mavenCentral()
@@ -21,7 +21,7 @@ publishing {
         mavenJava(MavenPublication) {
             groupId = 'com.mav6.ashleyUtils'
             artifactId = 'AshleyUtils'
-            version = '1.4.1'
+            version = '1.4.2'
 
             from components.java
         }
